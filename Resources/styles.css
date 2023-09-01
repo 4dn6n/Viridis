@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+ html{
+  font-size: 16px;
+ }
+
+/* Universal styles */
+* {
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #F2EBE3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 2.25rem;
+}
+
+h4{
+  font-size: 1.5rem;
+}
+
+h5{
+  font-size: 1rem;
+}
+
+p{
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* Header section */
+
+header{
+  display: flex;
+  flex-direction: column; 
+}
+nav{
+  background-color: #FAF9F9;
+  height: 86px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 3rem;
+  position: fixed;
+  z-index: 2000;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+nav li{
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+nav .logo{
+  cursor: pointer;
+  margin-right: auto;
+}
+
+nav a{
+  color: #493E28;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.3s ease 0s;
+}
+
+nav a:hover{
+  color: #B7B2A9;
+}
+
+.hero{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url("../Resources/images/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: auto;
+}
+
+.hero .cta{
+  padding: 0 6rem 15rem 0;
+}
+
+.hero .cta h1{
+  max-width: 489px;
+  color: #6B6D61;
+  padding-bottom: 3rem;
+}
+
+.hero .cta button{
+  color: white;
+  width: 489px;
+  font-size: 1.5rem;
+  border: none;
+  font-weight: 500;
+  padding: 1.5rem 4rem;
+  background-color: black;
+  border-radius: 10px;
+}
+
+
+#welcome {
+  padding: 7rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+#welcome h2{
+  color: #493E28;
+  text-align: center;
+  max-width: 726px;
+  align-self: center;
+  padding-bottom: 2rem;
+}
+
+
+#about-us{
+  padding-bottom: 0;
+  max-width: 726px;
+  color: #493E28;
+}
+
+/*@media screen and (max-width: 768px){
+  .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Resources/images/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: auto;
+  }
+
+  .hero .cta{
+    padding: 24px 62px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+  }
+
+  .hero .cta h1{
+    max-width: 489px;
+    color: #4A502C;
+    padding-bottom: 55px;
+  }
+} 
+
+
+/* main section */
+main h3,h4,p{
+  color: #493E28;
+  padding-bottom: 2rem;
+}
+
+main p{
+  padding-bottom: 0;
+}
+
+main img{
+  height: 368.28px;
+  width: 360px;
+  object-fit: cover; 
+  padding-bottom: 3rem;
+}
+
+.card-fix img{
+  height: 368.28px;
+  width: 360px;
+  object-position: -118px; 
+  padding-bottom: 3rem;
+}
+
+main .intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+
+main .intro h3,p{
+  text-align: center;
+  align-self: center;
+}
+
+
+
+main .card, .card-fix{
+  max-width: 360px;
+  margin: 2rem;
+  /*background-color: aquamarine;*/
+  
+}
+
+main .card p, .card-fix p{
+  text-align: start;
+}
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .cards{
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  display: inline-flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  /*gap: 4rem;
+  margin: 2rem;*/
+}
+
+
+main button{
+  font-size: 1.25rem;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  padding: 1.125rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  width: 193px;
+  align-self: center;
+  margin-bottom: 7rem;
+}
+
+/* footer section */
+
+footer .help{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-image: url("../Resources/images/club.jpg");
+  height: 363px;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 60% ;
+}
+
+footer .help::before{
+  content: ""; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background-color:rgba(73, 62, 40, 74%);
+}
+
+footer .help h3{
+  text-align: center;
+  position: relative;
+  color: white;
+  z-index: 2;
+  align-self: center;
+  padding-bottom: 3rem;
+}
+
+footer .help button{
+  align-self: center;
+  position: relative;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1.125rem 1.5rem;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  z-index: 2;
+  width: 300px;
+}
+
+footer .links{
+  padding: 7rem 35rem 6rem 7rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: first baseline;
+}
+
+
+footer a{
+  line-height: 2.5;
+  color: black;
+  font-size: 1rem;
+}
+
+footer h5{
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#copyright {
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+}
+
+#copyright p{
+  padding: 0;
+  font-size: 1rem;
+  align-self: center;
+}
